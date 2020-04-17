@@ -22,7 +22,7 @@ class_names = ["T-shirt/top","Trouser","Pullover", "Dress", "Coat",
 train_images  = train_images / 255.0
 test_images = test_images / 255.0
 
-Print 25 elements from the Training set
+#Print 25 elements from the Training set
 plt.figure(figsize =(10,10))
 for i in range (25):
     plt.subplot(5,5,i+1)
