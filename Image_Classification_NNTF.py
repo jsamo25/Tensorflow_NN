@@ -45,10 +45,10 @@ model.compile(optimizer="adam",
 
 model.fit(train_images, train_labels, epochs=5)
 
-# test_loss, test_acc = model.evaluate(test_images, test_labels)
-# print(f"Test Accuracy: {test_acc}")
+test_loss, test_acc = model.evaluate(test_images, test_labels)
+print(f"Test Accuracy: {test_acc}")
 
 prediction = model.predict(test_images)
-print(prediction[0]) #all element that belong (presumably) to the "0" category
+print("prediction:", prediction[0]) #all element that belong (presumably) to the "0" category
 print(np.argmax(prediction[0]))
 print(test_labels[0])
